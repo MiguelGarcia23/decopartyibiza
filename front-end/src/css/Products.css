@@ -1,0 +1,7 @@
+/* Importando variables de colores de la App */
+@import url( ./App.css );
+
+/* ---------- Estilos de la Product Page ---------- */
+.products-page {
+    color: var( --violet );
+}
