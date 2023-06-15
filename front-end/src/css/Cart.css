@@ -1,0 +1,7 @@
+/* Importando variables de colores de la App */
+@import url( ./App.css );
+
+/* ---------- Estilos de la Cart Page ---------- */
+.cart-page {
+    color: var( --blue );
+}

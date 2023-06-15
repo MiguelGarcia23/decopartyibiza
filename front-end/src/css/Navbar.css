@@ -1,0 +1,232 @@
+/* Importando variables de colores de la App */
+@import url( ./App.css );
+
+/* Estilo general */
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}
+
+.pos-appear {
+    transform: translateX( 0 ) !important;
+}
+
+.pos-disappear {
+    transform: translateX( -100% ) !important;
+}
+
+/* ---------- Estilos del Navbar ---------- */
+
+/* ----- Navbar versión Mobile ----- */
+.navbar-mobile {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+/* Navbar mobile estático */
+.navbar-mobile-static {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem 1rem 1.25rem;
+}
+
+/* Logo del Navbar Mobile */
+.logo-navbar {
+    height: 100%;
+}
+
+/* Logo del Navbar Mobile */
+.logo-navbar img {
+    height: 100%;
+}
+
+/* Ícono burger menu navbar mobile */
+.icon-burger-menu-navbar-mobile {
+    color: var( --violet );
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Ícono cerrar burger menu navbar mobile */
+.icon-close-burger-menu-navbar-mobile {
+    color: var( --violet );
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Navbar mobile activo */
+.navbar-mobile-active {
+    height: calc( 100vh - 100px );
+    width: 100vw;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 98;
+    transition: all 1s;
+}
+
+.navbar-mobile-active ul {
+    height: 100%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Cada opción del Navbar mobile activo */
+.option-navbar-mobile-active {
+    height: calc( ( 100vh - 100px ) / 3 );
+    margin: 0;
+}
+
+.option-navbar-mobile-active a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Figura de cada opción del navbar mobile activo */
+.figure-option-navbar-mobile-active {
+    display: block;
+    height: 100%;
+    width: calc( ( 100vh - 100px ) / 3 );
+    border-radius: 50%;
+    transform: translateX( -50% );
+    background-color: red;
+}
+
+/* Título de cada opción del navbar mobile activo */
+.title-option-navbar-mobile-active {
+    margin-right: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Primera opción del navbar mobile activo */
+#first-option-navbar-mobile-active {
+    background-color: var( --violet );
+}
+
+#first-option-navbar-mobile-active a .figure-option-navbar-mobile-active{
+    background-color: var( --blue );
+}
+
+#first-option-navbar-mobile-active a .title-option-navbar-mobile-active{
+    color: var( --blue );
+}
+
+/* Segunda opción del navbar mobile activo */
+#second-option-navbar-mobile-active {
+    background-color: var( --blue );
+}
+
+#second-option-navbar-mobile-active a .figure-option-navbar-mobile-active{
+    background-color: var( --violet );
+}
+
+#second-option-navbar-mobile-active a .title-option-navbar-mobile-active{
+    color: var( --violet );
+}
+
+/* Tercera opción del navbar mobile activo */
+#third-option-navbar-mobile-active {
+    background-color: var( --violet );
+}
+
+#third-option-navbar-mobile-active a .figure-option-navbar-mobile-active{
+    background-color: var( --blue );
+}
+
+#third-option-navbar-mobile-active a .title-option-navbar-mobile-active{
+    color: var( --blue );
+}
+
+/* ----- Navbar versión Desktop ----- */
+.navbar-desktop {
+    display: none;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3.125rem 1rem 3.125rem;
+}
+
+/* Lista de links navbar desktop */
+.ul-navbar-desktop {
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Cada link del navbar desktop */
+.option-navbar-desktop {
+    margin-right: 2.75rem;
+    position: relative;
+}
+
+.option-navbar-desktop:last-child {
+    margin-right: 0;
+}
+
+.option-navbar-desktop a {
+    text-decoration: none;
+    color: var( --violet );
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.75rem;
+    letter-spacing: 1%;
+}
+
+/* Botón del navbar desktop */
+.button-navbar-desktop {
+    width: 160px;
+    height: 50px;
+    background-color: var( --blue );
+    color: var( --white );
+    border: 2px solid var( --violet );
+    border-radius: 8px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.75rem;
+    letter-spacing: 1%;
+}
+
+/* Indicador de página activa del navbar desktop */
+.pointer-active-option-navbar-desktop {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 120%;
+    left: 47%;
+    background-color: var( --violet ) !important;
+}
+
+/* ---------- Media queries ---------- */
+/* Tablet */
+@media ( min-width: 768px ) {
+
+    /* ----- Navbar versión Mobile ----- */
+    .navbar-mobile {
+        display: none;
+    }
+
+    /* ----- Navbar versión Desktop ----- */
+    .navbar-desktop {
+        display: flex;
+    }
+
+}

@@ -1,0 +1,16 @@
+/* ---------- Estilos generales de la App ---------- */
+
+/* Variables de colores de la App */
+:root {
+    --blue: #00ADEF;
+    --pink: #e90087;
+    --violet: #4A0C7D;
+    --green: #A2BE35;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+.App {
+    background-color: var( --white );
+    color: var( --black );
+}
