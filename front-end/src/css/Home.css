@@ -35,6 +35,64 @@
     height: 100%;
 }
 
+/* ----- Intro ----- */
+.intro-section {
+    padding: 2rem 1.5rem;
+}
+
+/* Título de Intro */
+.title-intro-section {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 110%;
+    color: var( --black );
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+/* Caja con la info y las imágenes */
+.box-info-imgs-intro-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Cada párrafo de Intro */
+.p-intro-section {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1rem;
+    line-height: 120%;
+    letter-spacing: 1%;
+    margin-bottom: 0.5rem;
+}
+
+/* Caja de imágenes de Intro */
+.box-imgs-intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+/* Cada imagen de Intro */
+.img-intro-section {
+    width: 178px;
+    height: 234px;
+}
+
+/* Primera imagen de Intro */
+#first-img-intro-section {
+    transform: translateX( 30px ) rotateZ( -10deg );
+}
+
+/* Segunda imagen de Intro */
+#second-img-intro-section {
+    transform: translateX( -35px ) translateY( 35px ) rotateZ( 17deg );
+}
+
 /* ---------- Media queries ---------- */
 /* Tablet */
 @media ( min-width: 768px ) {
@@ -42,6 +100,54 @@
     /* ----- Banner ----- */
     .banner-section {
         height: calc( 100vh - 100px );
+    }
+
+}
+
+/* Desktop */
+@media ( min-width: 1200px ) {
+
+    /* ----- Intro ----- */
+    .intro-section {
+        padding: 5rem 3rem;
+    }
+
+    /* Título de Intro */
+    .title-intro-section {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 110%;
+        margin-bottom: 3.75rem;
+    }
+
+    /* Caja con la info y las imágenes */
+    .box-info-imgs-intro-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Cada párrafo de Intro */
+    .p-intro-section {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Caja de imágenes de Intro */
+    .box-imgs-intro-section {
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+
+    /* Cada imagen de Intro */
+    .img-intro-section {
+        width: 288px;
+        height: 377px;
+    }
+
+    /* Segunda imagen de Intro */
+    #second-img-intro-section {
+        transform: translateX( -30px ) translateY( 35px ) rotateZ( 17deg );
     }
 
 }
