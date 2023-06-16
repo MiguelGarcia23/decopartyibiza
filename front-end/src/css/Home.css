@@ -75,12 +75,14 @@
     justify-content: center;
     align-items: center;
     margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
 }
 
 /* Cada imagen de Intro */
 .img-intro-section {
     width: 178px;
     height: 234px;
+    border: 2px solid var( --violet );
 }
 
 /* Primera imagen de Intro */
@@ -91,6 +93,133 @@
 /* Segunda imagen de Intro */
 #second-img-intro-section {
     transform: translateX( -35px ) translateY( 35px ) rotateZ( 17deg );
+}
+
+/* ----- Sección de Catálogo ----- */
+.catalogue-section {
+    background-color: var( --light-blue );
+    padding: 2.5rem 0;
+}
+
+/* Título dinámico de Nuestros Productos */
+.title-catalogue-section {
+    overflow-x: hidden;
+    margin-bottom: 2.5rem;
+}
+
+/* Cada fila del título de la sección Catálogo */
+.row-title-catalogue-section {
+    width: 1800px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* Cada círculo del título de la sección Catálogo  */
+.circle-title-catalogue-section {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 2.5rem;
+}
+
+/* Primer color círculos del título de la sección Catálogo */
+.first-color-circle-title-catalogue-section {
+    background-color: var( --green );
+}
+
+/* Segundo color círculos del título de la sección Catálogo */
+.second-color-circle-title-catalogue-section {
+    background-color: var( --violet );
+}
+
+/* Tercer color círculos del título de la sección Catálogo */
+.third-color-circle-title-catalogue-section {
+    background-color: var( --pink );
+}
+
+/* Cada texto del título de la sección Catálogo  */
+.text-title-catalogue-section {
+    color: var( --black );
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 110%;
+    white-space: nowrap;
+    margin-right: 2.5rem;
+}
+
+/* Caja de productos de sección Catálogo */
+.products-catalogue-section {
+    width: 100%;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Cada producto de sección Catálogo */
+.product-catalogue-section {
+    width: 100%;
+    max-width: 432px;
+    margin: 0 auto;
+    border: 2px solid var( --violet );
+    margin-bottom: 1rem;
+}
+
+.product-catalogue-section:last-child {
+    margin-bottom: 1.5rem;
+}
+
+/* Imagen de cada producto de sección Catálogo */
+.img-product-catalogue-section {
+    width: 100%;
+    border-bottom: 2px solid var( --violet );
+}
+
+/* Caja de info de cada producto de sección Catálogo */
+.info-product-catalogue-section {
+    background-color: var( --white );
+    padding: 1.5rem 1rem;
+}
+
+/* Título de cada producto de sección Catálogo */
+.title-product-catalogue-section {
+    color: var( --black );
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 0.75rem;
+}
+
+/* Precio de cada producto de sección Catálogo */
+.price-product-catalogue-section {
+    font-family: 'Patrick Hand', cursive;
+    color: var( --black );
+    font-size: 1.125rem;
+    line-height: 120%;
+    letter-spacing: 1%;
+}
+
+/* Botón de sección Catálogo */
+.button-catalogue-section {
+    width: 100%;
+}
+
+.button-catalogue-section button {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    background-color: var( --blue );
+    color: var( --white );
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.75rem;
+    border: 2px solid var( --violet );
+    border-radius: 8px;
 }
 
 /* ---------- Media queries ---------- */
@@ -148,6 +277,72 @@
     /* Segunda imagen de Intro */
     #second-img-intro-section {
         transform: translateX( -30px ) translateY( 35px ) rotateZ( 17deg );
+    }
+
+    /* ----- Sección de Catálogo ----- */
+    .catalogue-section {
+        padding: 6.25rem 0;
+    }
+
+    /* Título dinámico de Nuestros Productos */
+    .title-catalogue-section {
+        margin-bottom: 6.25rem;
+    }
+
+    /* Cada fila del título de la sección Catálogo */
+    .row-title-catalogue-section {
+        width: 3500px;
+    }
+
+    .row-title-catalogue-section:first-child {
+        margin-bottom: 0.325rem;
+    }
+
+    /* Cada círculo del título de la sección Catálogo  */
+    .circle-title-catalogue-section {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 2.75rem;
+    }
+
+    /* Cada texto del título de la sección Catálogo  */
+    .text-title-catalogue-section {
+        font-size: 5rem;
+        margin-right: 2.75rem;
+    }
+
+    /* Caja de productos de sección Catálogo */
+    .products-catalogue-section {
+        padding: 0 3.125rem;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+    }
+
+    /* Cada producto de sección Catálogo */
+    .product-catalogue-section {
+        margin-bottom: 0;
+    }
+
+    .product-catalogue-section:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Título de cada producto de sección Catálogo */
+    .title-product-catalogue-section {
+        font-size: 2rem;
+    }
+
+    /* Precio de cada producto de sección Catálogo */
+    .price-product-catalogue-section {
+        font-size: 1.75rem;
+    }
+
+    /* Botón de sección Catálogo */
+    .button-catalogue-section button {
+        width: 370px;
+        font-size: 2.25rem;
     }
 
 }
