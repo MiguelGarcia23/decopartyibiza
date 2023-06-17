@@ -101,55 +101,6 @@
     padding: 2.5rem 0;
 }
 
-/* Título dinámico de Nuestros Productos */
-.title-catalogue-section {
-    overflow-x: hidden;
-    margin-bottom: 2.5rem;
-}
-
-/* Cada fila del título de la sección Catálogo */
-.row-title-catalogue-section {
-    width: 1800px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    overflow-x: hidden;
-}
-
-/* Cada círculo del título de la sección Catálogo  */
-.circle-title-catalogue-section {
-    display: block;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    margin-right: 2.5rem;
-}
-
-/* Primer color círculos del título de la sección Catálogo */
-.first-color-circle-title-catalogue-section {
-    background-color: var( --green );
-}
-
-/* Segundo color círculos del título de la sección Catálogo */
-.second-color-circle-title-catalogue-section {
-    background-color: var( --violet );
-}
-
-/* Tercer color círculos del título de la sección Catálogo */
-.third-color-circle-title-catalogue-section {
-    background-color: var( --pink );
-}
-
-/* Cada texto del título de la sección Catálogo  */
-.text-title-catalogue-section {
-    color: var( --black );
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 110%;
-    white-space: nowrap;
-    margin-right: 2.5rem;
-}
-
 /* Caja de productos de sección Catálogo */
 .products-catalogue-section {
     width: 100%;
@@ -222,6 +173,101 @@
     border-radius: 8px;
 }
 
+/* ----- Sección de Catálogo ----- */
+.clients-section {
+    padding: 2.5rem 0;
+    background-color: var( --light-pink );
+}
+
+/* Carrusel de opiniones de clientes de la sección Catálogo */
+.carousel-clients-section {
+    width: 100%;
+    height: 260px;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+/* Cada item del carrusel de sección Catálogo */
+.item-carousel-clients-section {
+    width: 100%;
+    height: 100%;
+}
+
+.item-carousel-clients-section div {
+    width: 260px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var( --pink );
+    border: 2px solid var( --violet );
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+/* Opinión de cada cliente del carrusel de sección Catálogo */
+.opinion-item-carousel-clients-section {
+    font-family: 'Patrick Hand', cursive;
+    color: var( --white );
+    font-size: 1.25rem;
+    padding-left: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Firma de cada cliente del carrusel de sección Catálogo */
+.sign-item-carousel-clients-section {
+    font-family: 'Patrick Hand', cursive;
+    color: var( --white );
+    font-size: 0.875rem;
+}
+
+/* Indicadores del carrusel de sección Catálogo */
+.carousel-indicators {
+    top: 109%;
+}
+
+.carousel-indicators button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    margin-right: 0.625rem !important;
+    background-color: var( --gray ) !important;
+}
+
+.carousel-indicators button:last-child {
+    margin-right: 0 !important;
+}
+
+.carousel-indicators .active {
+    background-color: var( --pink ) !important;
+}
+
+/* Flechas del carrusel de sección Catálogo */
+.arrows-carousel-clients-section {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: center;
+}
+
+.jc-end {
+    justify-content: flex-end !important;
+}
+
+.arrow-prev-carousel-clients-section, .arrow-next-carousel-clients-section {
+    font-size: 1.5rem;
+    color: var( --violet );
+    cursor: pointer;
+}
+
 /* ---------- Media queries ---------- */
 /* Tablet */
 @media ( min-width: 768px ) {
@@ -284,34 +330,6 @@
         padding: 6.25rem 0;
     }
 
-    /* Título dinámico de Nuestros Productos */
-    .title-catalogue-section {
-        margin-bottom: 6.25rem;
-    }
-
-    /* Cada fila del título de la sección Catálogo */
-    .row-title-catalogue-section {
-        width: 3500px;
-    }
-
-    .row-title-catalogue-section:first-child {
-        margin-bottom: 0.325rem;
-    }
-
-    /* Cada círculo del título de la sección Catálogo  */
-    .circle-title-catalogue-section {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        margin-right: 2.75rem;
-    }
-
-    /* Cada texto del título de la sección Catálogo  */
-    .text-title-catalogue-section {
-        font-size: 5rem;
-        margin-right: 2.75rem;
-    }
-
     /* Caja de productos de sección Catálogo */
     .products-catalogue-section {
         padding: 0 3.125rem;
@@ -343,6 +361,59 @@
     .button-catalogue-section button {
         width: 370px;
         font-size: 2.25rem;
+    }
+
+    /* ----- Sección de Catálogo ----- */
+    .clients-section {
+        padding: 6.25rem 0;
+    }
+
+    /* Carrusel de opiniones de clientes de la sección Catálogo */
+    .carousel-clients-section {
+        height: 620px;
+        margin-bottom: 6.25rem;
+    }
+
+    /* Cada item del carrusel de sección Catálogo */
+    .item-carousel-clients-section div {
+        width: 620px;
+    }
+
+    /* Opinión de cada cliente del carrusel de sección Catálogo */
+    .opinion-item-carousel-clients-section {
+        font-size: 3rem;
+        line-height: 120%;
+        padding-left: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    /* Firma de cada cliente del carrusel de sección Catálogo */
+    .sign-item-carousel-clients-section {
+        font-size: 1.75rem;
+    }
+
+    /* Indicadores del carrusel de sección Catálogo */
+    .carousel-indicators {
+        top: 109%;
+    }
+
+    .carousel-indicators button {
+        width: 24px !important;
+        height: 24px !important;
+        margin-right: 1.5rem !important;
+    }
+
+    .carousel-indicators button:last-child {
+        margin-right: 0 !important;
+    }
+
+    /* Flechas del carrusel de sección Catálogo */
+    .arrows-carousel-clients-section {
+        padding: 5rem;
+    }
+
+    .arrow-prev-carousel-clients-section, .arrow-next-carousel-clients-section {
+        font-size: 4rem;
     }
 
 }

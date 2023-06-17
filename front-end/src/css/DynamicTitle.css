@@ -1,0 +1,105 @@
+/* Importando variables de colores de la App */
+@import url( ./App.css );
+
+/* ---------- Estilos del Título Dinámico ---------- */
+.dynamic-title {
+    overflow-x: hidden;
+    margin-bottom: 2.5rem;
+}
+
+/* Cada fila del título dinámico */
+.row-dynamic-title {
+    width: 2800px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* Cada círculo del título dinámico  */
+.circle-dynamic-title {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 2.5rem;
+}
+
+/* Círculo azul del título dinámico */
+.blue-circle-dynamic-title {
+    background-color: var( --blue );
+}
+
+/* Círculo verde del título dinámico */
+.green-circle-dynamic-title {
+    background-color: var( --green );
+}
+
+/* Círculo morado del título dinámico */
+.violet-circle-dynamic-title {
+    background-color: var( --violet );
+}
+
+/* Círculo rosado del título dinámico */
+.pink-circle-dynamic-title {
+    background-color: var( --pink );
+}
+
+/* Cada texto del título dinámico  */
+.text-dynamic-title {
+    color: var( --black );
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 110%;
+    white-space: nowrap;
+    margin-right: 2.5rem;
+}
+
+/* ---------- Media queries ---------- */
+/* Tablet */
+@media ( min-width: 768px ) {
+
+    /* ----- Banner ----- */
+    .banner-section {
+        height: calc( 100vh - 100px );
+    }
+
+}
+
+/* Desktop */
+@media ( min-width: 1200px ) {
+
+    /* ----- Título Dinámico ----- */
+    .catalogue-section {
+        padding: 6.25rem 0;
+    }
+
+    /* Título dinámico */
+    .dynamic-title {
+        margin-bottom: 6.25rem;
+    }
+
+    /* Cada fila del título dinámico */
+    .row-dynamic-title {
+        width: 5000px;
+    }
+
+    .row-dynamic-title:first-child {
+        margin-bottom: 0.325rem;
+    }
+
+    /* Cada círculo del título dinámico  */
+    .circle-dynamic-title {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 2.75rem;
+    }
+
+    /* Cada texto del título dinámico  */
+    .text-dynamic-title {
+        font-size: 5rem;
+        margin-right: 2.75rem;
+    }
+
+}

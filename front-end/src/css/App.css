@@ -4,11 +4,13 @@
 :root {
     --blue: #00ADEF;
     --light-blue: #8FE0FF;
-    --pink: #e90087;
+    --pink: #E90087;
+    --light-pink: #FF92D1;
     --violet: #4A0C7D;
     --green: #A2BE35;
     --white: #FFFFFF;
     --black: #000000;
+    --gray: #D9D9D9;
 }
 
 .App {
