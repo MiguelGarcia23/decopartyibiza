@@ -5,6 +5,7 @@ import Banner from './Banner';
 import Intro from './Intro';
 import Catalogue from './Catalogue';
 import Clients from './Clients';
+import Questions from './Questions';
 import Contact from './Contact';
 
 /* Importando estilos del Home */
@@ -35,6 +36,9 @@ const HomePage = () => {
 
             {/* Sección de Clientes */}
             <Clients />
+
+            {/* Sección de Preguntas Frecuentes */}
+            <Questions />
 
             {/* Sección de Contacto */}
             <Contact />

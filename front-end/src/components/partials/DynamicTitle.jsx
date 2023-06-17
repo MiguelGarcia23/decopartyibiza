@@ -56,23 +56,27 @@ const DynamicTitle = ({ title }) => {
     const handleScroll = () => {
 
         /* Variables que guardan las filas */
-        let firstRow = document.getElementById('first-row-dynamic-title');
-        let secondRow = document.getElementById('second-row-dynamic-title');
+        let firstRow = document.getElementsByClassName('first-row-dynamic-title');
+        let secondRow = document.getElementsByClassName('second-row-dynamic-title');
 
         /* Condición que pregunta si la página hizo scroll hacia abajo o hacia arriba */
         if ( window.scrollY > positionYState ) {
 
             /* Variables de aumento o disminución de la posición de transición Y */
-            let decreaseTranslateX = transitionRow1 - 10;
-            let increaseTranslateX = transitionRow2 + 10;
+            let decreaseTranslateX = transitionRow1 - 2;
+            let increaseTranslateX = transitionRow2 + 2;
 
             /* String que guarda el nuevo estilo de transform que tendrán las filas */
             let newStyleTransformWithDecreaseTranslateX = `translateX( ${ decreaseTranslateX }px )`;
             let newStyleTransformWithIncreaseTranslateX = `translateX( ${ increaseTranslateX }px )`;
 
             /* Agregando los estilos a cada una de las filas por separado para crear el efecto de movimiento */
-            firstRow.style.transform = newStyleTransformWithDecreaseTranslateX;
-            secondRow.style.transform = newStyleTransformWithIncreaseTranslateX;
+            for ( let row of firstRow ) {
+                row.style.transform = newStyleTransformWithDecreaseTranslateX;
+            }
+            for ( let row of secondRow ) {
+                row.style.transform = newStyleTransformWithIncreaseTranslateX;
+            }
 
             /* Actualizando la posición del estado TransitionX de cada una de las filas */
             setTransitionRow1( decreaseTranslateX )
@@ -89,8 +93,12 @@ const DynamicTitle = ({ title }) => {
             let newStyleTransformWithIncreaseTranslateX = `translateX( ${ increaseTranslateX }px )`;
 
             /* Agregando los estilos a cada una de las filas por separado para crear el efecto de movimiento */
-            firstRow.style.transform = newStyleTransformWithIncreaseTranslateX;
-            secondRow.style.transform = newStyleTransformWithDecreaseTranslateX;
+            for ( let row of firstRow ) {
+                row.style.transform = newStyleTransformWithIncreaseTranslateX;
+            };
+            for ( let row of secondRow ) {
+                row.style.transform = newStyleTransformWithDecreaseTranslateX;
+            };
 
             /* Actualizando la posición del estado TransitionX de cada una de las filas */
             setTransitionRow1( increaseTranslateX )
@@ -111,7 +119,7 @@ const DynamicTitle = ({ title }) => {
         <article className='dynamic-title'>
 
             {/* Primera fila del título */}
-            <div className='row-dynamic-title' id='first-row-dynamic-title'>
+            <div className='row-dynamic-title first-row-dynamic-title'>
 
                 <h3 className='text-dynamic-title'>{ title }</h3>
                 <div className={ `circle-dynamic-title ${ firstColorState }` }></div>
@@ -124,7 +132,7 @@ const DynamicTitle = ({ title }) => {
             </div>
 
             {/* Segunda fila del título */}
-            <div className='row-dynamic-title' id='second-row-dynamic-title'>
+            <div className='row-dynamic-title second-row-dynamic-title'>
 
                 <div className={ `circle-dynamic-title ${ secondColorState }` }></div>
                 <h3 className='text-dynamic-title'>{ title }</h3>

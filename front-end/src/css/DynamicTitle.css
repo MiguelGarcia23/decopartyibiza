@@ -56,24 +56,10 @@
 }
 
 /* ---------- Media queries ---------- */
-/* Tablet */
-@media ( min-width: 768px ) {
-
-    /* ----- Banner ----- */
-    .banner-section {
-        height: calc( 100vh - 100px );
-    }
-
-}
-
 /* Desktop */
 @media ( min-width: 1200px ) {
 
     /* ----- Título Dinámico ----- */
-    .catalogue-section {
-        padding: 6.25rem 0;
-    }
-
     /* Título dinámico */
     .dynamic-title {
         margin-bottom: 6.25rem;
