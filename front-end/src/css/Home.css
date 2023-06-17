@@ -268,6 +268,61 @@
     cursor: pointer;
 }
 
+/* ----- Sección de Preguntas Frecuentes ----- */
+.questions-section {
+    padding: 2.5rem 0;
+    background-color: var( --green );
+}
+
+/* Acordión de la sección de Preguntas Frecuentes */
+.accordion-question-section {
+    padding: 0 2.5rem;
+}
+
+/* Cada opción del acordión de la sección de Preguntas Frecuentes */
+.option-accordion-question-section {
+    background-color: var( --violet ) !important;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.option-accordion-question-section:last-child {
+    margin-bottom: 0;
+}
+
+/* Header de cada opción del acordión de la sección de Preguntas Frecuentes */
+.header-option-accordion-question-section, .accordion-button {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.125rem !important;
+    line-height: 120% !important;
+    letter-spacing: 1% !important;
+    color: var( --black );
+    border: 2px solid var( --violet );
+    border-radius: 8px;
+}
+
+.accordion-button:focus {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: var( --white ) !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+/* Body de cada opción del acordión de la sección de Preguntas Frecuentes */
+.body-option-accordion-question-section {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1rem;
+    line-height: 120%;
+    letter-spacing: 1%;
+    color: var( --black );
+    background-color: var( --white );
+    border: 2px solid var( --violet );
+    border-top: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
 /* ---------- Media queries ---------- */
 /* Tablet */
 @media ( min-width: 768px ) {
@@ -414,6 +469,35 @@
 
     .arrow-prev-carousel-clients-section, .arrow-next-carousel-clients-section {
         font-size: 4rem;
+    }
+
+    /* ----- Sección de Preguntas Frecuentes ----- */
+    .questions-section {
+        padding: 6.25rem 0;
+    }
+
+    /* Acordión de la sección de Preguntas Frecuentes */
+    .accordion-question-section {
+        padding: 0 3.25rem;
+    }
+
+    /* Cada opción del acordión de la sección de Preguntas Frecuentes */
+    .option-accordion-question-section {
+        margin-bottom: 1rem;
+    }
+
+    .option-accordion-question-section:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Header de cada opción del acordión de la sección de Preguntas Frecuentes */
+    .header-option-accordion-question-section, .accordion-button {
+        font-size: 2.25rem !important;
+    }
+
+    /* Body de cada opción del acordión de la sección de Preguntas Frecuentes */
+    .body-option-accordion-question-section {
+        font-size: 1.75rem;
     }
 
 }
