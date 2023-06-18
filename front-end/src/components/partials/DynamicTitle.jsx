@@ -128,6 +128,13 @@ const DynamicTitle = ({ title }) => {
                 <h3 className='text-dynamic-title'>{ title }</h3>
                 <div className={ `circle-dynamic-title ${ thirdColorState }` }></div>
                 <h3 className='text-dynamic-title'>{ title }</h3>
+                {
+                    title === 'Hablemos' &&
+                    <>
+                        <div className={ `circle-dynamic-title ${ firstColorState }` }></div>
+                        <h3 className='text-dynamic-title'>{ title }</h3>
+                    </>
+                }
 
             </div>
 
@@ -141,6 +148,14 @@ const DynamicTitle = ({ title }) => {
                 <div className={ `circle-dynamic-title ${ firstColorState }` }></div>
                 <h3 className='text-dynamic-title'>{ title }</h3>
                 <div className={ `circle-dynamic-title ${ secondColorState }` }></div>
+
+                {
+                    title === 'Hablemos' &&
+                    <>
+                        <h3 className='text-dynamic-title'>{ title }</h3>
+                        <div className={ `circle-dynamic-title ${ thirdColorState }` }></div>
+                    </>
+                }
 
             </div>
 
