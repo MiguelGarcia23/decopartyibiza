@@ -1,0 +1,34 @@
+/* Importando variables de colores de la App */
+@import url( ./App.css );
+
+/* ---------- Estilos Footer ---------- */
+.footer-section {
+    width: 100%;
+    background-color: var( --white );
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Imagen del footer */
+.img-footer-section {
+    width: 80px;
+    height: 80px;
+}
+
+/* ---------- Media queries ---------- */
+/* Desktop */
+@media ( min-width: 1200px ) {
+
+    /* ---------- Estilos Footer ---------- */
+    .footer-section {
+        padding: 2.5rem 0;
+    }
+
+    /* Imagen del footer */
+    .img-footer-section {
+        width: 140px;
+        height: 140px;
+    }
+
+}
