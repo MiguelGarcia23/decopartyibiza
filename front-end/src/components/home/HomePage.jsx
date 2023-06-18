@@ -7,6 +7,7 @@ import Catalogue from './Catalogue';
 import Clients from './Clients';
 import Questions from './Questions';
 import Contact from './Contact';
+import Footer from '../partials/Footer';
 
 /* Importando estilos del Home */
 import '../../css/Home.css';
@@ -42,6 +43,9 @@ const HomePage = () => {
 
             {/* Sección de Contacto */}
             <Contact />
+
+            {/* Footer */}
+            <Footer />
 
         </main>
 
