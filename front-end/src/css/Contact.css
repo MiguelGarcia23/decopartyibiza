@@ -1,7 +1,0 @@
-/* Importando variables de colores de la App */
-@import url( ./App.css );
-
-/* ---------- Estilos de la Contact Page ---------- */
-.contact-page {
-    color: var( --blue );
-}
