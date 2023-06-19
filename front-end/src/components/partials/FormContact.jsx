@@ -5,17 +5,17 @@ import { useState } from 'react';
 import { Accordion } from 'react-bootstrap';
 
 /* Importando componentes propios */
-import DynamicTitle from '../partials/DynamicTitle';
+import DynamicTitle from './DynamicTitle';
 
 /* Importando imágenes */
 import iconInstagram from '../../assets/home/icon-instagram.png';
 import iconWhatsapp from '../../assets/home/icon-whatsapp.png';
 
 /* Importando estilos del Home */
-import '../../css/Home.css';
+import '../../css/FormContact.css';
 
 
-const Contact = () => {
+const FormContact = () => {
 
     /* Estado que si se hizo focus en el input del formulario */
     let [ activeInput, setActiveInput ] = useState({
@@ -470,4 +470,4 @@ const Contact = () => {
     )
 }
 
-export default Contact;
+export default FormContact;

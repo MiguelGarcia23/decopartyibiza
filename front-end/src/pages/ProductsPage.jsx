@@ -1,9 +1,9 @@
 /* Importando componentes propios */
-import NavbarMobile from '../navbar/NavbarMobile';
-import NavbarDesktop from '../navbar/NavbarDesktop';
+import NavbarMobile from '../components/navbar/NavbarMobile';
+import NavbarDesktop from '../components/navbar/NavbarDesktop';
 
 /* Importando estilos de Products */
-import '../../css/Products.css';
+import '../css/Products.css';
 
 
 const ProductsPage = () => {
