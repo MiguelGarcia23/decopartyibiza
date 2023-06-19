@@ -119,6 +119,7 @@
     margin: 0 auto;
     border: 2px solid var( --violet );
     margin-bottom: 1rem;
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.25);
 }
 
 .product-catalogue-section:last-child {
@@ -173,13 +174,13 @@
     border-radius: 8px;
 }
 
-/* ----- Sección de Catálogo ----- */
+/* ----- Sección de Clientes ----- */
 .clients-section {
     padding: 2.5rem 0;
     background-color: var( --light-pink );
 }
 
-/* Carrusel de opiniones de clientes de la sección Catálogo */
+/* Carrusel de opiniones de clientes de la sección Clientes */
 .carousel-clients-section {
     width: 100%;
     height: 260px;
@@ -187,7 +188,7 @@
     position: relative;
 }
 
-/* Cada item del carrusel de sección Catálogo */
+/* Cada item del carrusel de sección Clientes */
 .item-carousel-clients-section {
     width: 100%;
     height: 100%;
@@ -207,7 +208,7 @@
     padding-top: 2.5rem;
 }
 
-/* Opinión de cada cliente del carrusel de sección Catálogo */
+/* Opinión de cada cliente del carrusel de sección Clientes */
 .opinion-item-carousel-clients-section {
     font-family: 'Patrick Hand', cursive;
     color: var( --white );
@@ -216,14 +217,14 @@
     margin-bottom: 0.25rem;
 }
 
-/* Firma de cada cliente del carrusel de sección Catálogo */
+/* Firma de cada cliente del carrusel de sección Clientes */
 .sign-item-carousel-clients-section {
     font-family: 'Patrick Hand', cursive;
     color: var( --white );
     font-size: 0.875rem;
 }
 
-/* Indicadores del carrusel de sección Catálogo */
+/* Indicadores del carrusel de sección Clientes */
 .carousel-indicators {
     top: 109%;
 }
@@ -244,7 +245,7 @@
     background-color: var( --pink ) !important;
 }
 
-/* Flechas del carrusel de sección Catálogo */
+/* Flechas del carrusel de sección Clientes */
 .arrows-carousel-clients-section {
     width: 100%;
     position: absolute;
@@ -418,23 +419,23 @@
         font-size: 2.25rem;
     }
 
-    /* ----- Sección de Catálogo ----- */
+    /* ----- Sección de Clientes ----- */
     .clients-section {
         padding: 6.25rem 0;
     }
 
-    /* Carrusel de opiniones de clientes de la sección Catálogo */
+    /* Carrusel de opiniones de clientes de la sección Clientes */
     .carousel-clients-section {
         height: 620px;
         margin-bottom: 6.25rem;
     }
 
-    /* Cada item del carrusel de sección Catálogo */
+    /* Cada item del carrusel de sección Clientes */
     .item-carousel-clients-section div {
         width: 620px;
     }
 
-    /* Opinión de cada cliente del carrusel de sección Catálogo */
+    /* Opinión de cada cliente del carrusel de sección Clientes */
     .opinion-item-carousel-clients-section {
         font-size: 3rem;
         line-height: 120%;
@@ -442,12 +443,12 @@
         margin-bottom: 2.5rem;
     }
 
-    /* Firma de cada cliente del carrusel de sección Catálogo */
+    /* Firma de cada cliente del carrusel de sección Clientes */
     .sign-item-carousel-clients-section {
         font-size: 1.75rem;
     }
 
-    /* Indicadores del carrusel de sección Catálogo */
+    /* Indicadores del carrusel de sección Clientes */
     .carousel-indicators {
         top: 109%;
     }
@@ -462,7 +463,7 @@
         margin-right: 0 !important;
     }
 
-    /* Flechas del carrusel de sección Catálogo */
+    /* Flechas del carrusel de sección Clientes */
     .arrows-carousel-clients-section {
         padding: 5rem;
     }
