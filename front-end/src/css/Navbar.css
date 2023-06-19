@@ -86,6 +86,7 @@
 .option-navbar-mobile-active {
     height: calc( ( 100vh - 100px ) / 3 );
     margin: 0;
+    border: 2px solid var( --violet );
 }
 
 .option-navbar-mobile-active a {
@@ -104,7 +105,6 @@
     width: calc( ( 100vh - 100px ) / 3 );
     border-radius: 50%;
     transform: translateX( -50% );
-    background-color: red;
 }
 
 /* Título de cada opción del navbar mobile activo */
@@ -112,45 +112,34 @@
     margin-right: 1.5rem;
     font-size: 2rem;
     font-weight: 700;
+    color: var( --white );
 }
 
 /* Primera opción del navbar mobile activo */
 #first-option-navbar-mobile-active {
-    background-color: var( --violet );
-}
-
-#first-option-navbar-mobile-active a .figure-option-navbar-mobile-active{
     background-color: var( --blue );
 }
 
-#first-option-navbar-mobile-active a .title-option-navbar-mobile-active{
-    color: var( --blue );
+#first-option-navbar-mobile-active a .figure-option-navbar-mobile-active{
+    background-color: var( --pink );
 }
 
 /* Segunda opción del navbar mobile activo */
 #second-option-navbar-mobile-active {
-    background-color: var( --blue );
+    background-color: var( --pink );
 }
 
 #second-option-navbar-mobile-active a .figure-option-navbar-mobile-active{
-    background-color: var( --violet );
-}
-
-#second-option-navbar-mobile-active a .title-option-navbar-mobile-active{
-    color: var( --violet );
+    background-color: var( --green );
 }
 
 /* Tercera opción del navbar mobile activo */
 #third-option-navbar-mobile-active {
-    background-color: var( --violet );
+    background-color: var( --green );
 }
 
 #third-option-navbar-mobile-active a .figure-option-navbar-mobile-active{
     background-color: var( --blue );
-}
-
-#third-option-navbar-mobile-active a .title-option-navbar-mobile-active{
-    color: var( --blue );
 }
 
 /* ----- Navbar versión Desktop ----- */
