@@ -5,3 +5,105 @@
 .products-page {
     color: var( --violet );
 }
+
+/* Contenedor body de la página de Listado de Productos */
+.container-body-products-page {
+    margin-top: 1.5rem;
+}
+
+/* Listado de productos */
+.list-products-products-page {
+    width: 100%;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Cada producto de Listado de Productos */
+.product-products-page {
+    width: 100%;
+    max-width: 432px;
+    margin: 0 auto;
+    border: 2px solid var( --violet );
+    margin-bottom: 1rem;
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.25);
+}
+
+.product-products-page:last-child {
+    margin-bottom: 0;
+}
+
+.product-products-page a {
+    text-decoration: none;
+}
+
+/* Imagen de cada producto de Listado de Productos */
+.img-product-products-page {
+    width: 100%;
+    border-bottom: 2px solid var( --violet );
+}
+
+/* Caja de info de cada producto de Listado de Productos */
+.info-product-products-page {
+    background-color: var( --white );
+    padding: 1.5rem 1rem;
+}
+
+/* Título de cada producto de Listado de Productos */
+.title-product-products-page {
+    color: var( --black );
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 0.75rem;
+}
+
+/* Precio de cada producto de Listado de Productos */
+.price-product-products-page {
+    font-family: 'Patrick Hand', cursive;
+    color: var( --black );
+    font-size: 1.125rem;
+    line-height: 120%;
+    letter-spacing: 1%;
+}
+
+/* ---------- Media queries ---------- */
+/* Desktop */
+@media ( min-width: 1200px ) {
+
+    /* Contenedor body de la página de Listado de Productos */
+    .container-body-products-page {
+        margin-top: 4rem;
+    }
+
+    /* Listado de productos */
+    .list-products-products-page {
+        padding: 0 3.125rem;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+    }
+
+    /* Cada producto de Listado de Productos */
+    .product-products-page {
+        margin-bottom: 0;
+    }
+
+    .product-products-page:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Título de cada producto de Listado de Productos */
+    .title-product-products-page {
+        font-size: 2rem;
+    }
+
+    /* Precio de cada producto de Listado de Productos */
+    .price-product-products-page {
+        font-size: 1.75rem;
+    }
+
+}
