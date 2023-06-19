@@ -1,16 +1,16 @@
 /* Importando componentes propios */
-import NavbarMobile from '../navbar/NavbarMobile';
-import NavbarDesktop from '../navbar/NavbarDesktop';
-import Banner from './Banner';
-import Intro from './Intro';
-import Catalogue from './Catalogue';
-import Clients from './Clients';
-import Questions from './Questions';
-import Contact from './Contact';
-import Footer from '../partials/Footer';
+import NavbarMobile from '../components/navbar/NavbarMobile';
+import NavbarDesktop from '../components/navbar/NavbarDesktop';
+import Banner from '../components/home/Banner';
+import Intro from '../components/home/Intro';
+import Catalogue from '../components/home/Catalogue';
+import Clients from '../components/home/Clients';
+import Questions from '../components/home/Questions';
+import FormContact from '../components/partials/FormContact';
+import Footer from '../components/partials/Footer';
 
 /* Importando estilos del Home */
-import '../../css/Home.css';
+import '../css/Home.css';
 
 
 const HomePage = () => {
@@ -42,7 +42,7 @@ const HomePage = () => {
             <Questions />
 
             {/* Sección de Contacto */}
-            <Contact />
+            <FormContact />
 
             {/* Footer */}
             <Footer />

@@ -1,9 +1,9 @@
 /* Importando componentes propios */
-import NavbarMobile from '../navbar/NavbarMobile';
-import NavbarDesktop from '../navbar/NavbarDesktop';
+import NavbarMobile from '../components/navbar/NavbarMobile';
+import NavbarDesktop from '../components/navbar/NavbarDesktop';
 
 /* Importando estilos del Contact */
-import '../../css/Contact.css';
+import '../css/Contact.css';
 
 
 const ContactPage = () => {

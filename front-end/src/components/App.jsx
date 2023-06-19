@@ -1,12 +1,12 @@
 /* Importando funcionalidades para el ruteo de la App */
 import { Routes, Route } from 'react-router-dom';
 
-/* Importando componentes propios */
-import HomePage from './home/HomePage';
-import ProductsPage from './products/ProductsPage';
-import ProductDetailPage from './product-detail/ProductDetailPage';
-import CartPage from './cart/CartPage';
-import ContactPage from './contact/ContactPage';
+/* Importando los componentes de las páginaspáginas */
+import HomePage from '../pages/HomePage';
+import ProductsPage from '../pages/ProductsPage';
+import ProductDetailPage from '../pages/ProductDetailPage';
+import CartPage from '../pages/CartPage';
+import ContactPage from '../pages/ContactPage';
 
 /* Importando estilos de la App */
 import '../css/App.css';
